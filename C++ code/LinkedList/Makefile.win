@@ -1,0 +1,82 @@
+# Project: Project1
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = BinaryFib.o binarysum.o FibWithArray.o GCDRec.o isPalindrom.o IsPrimeRec.o main.o Recfac.o RecfibMemorize.o RecMaxArray.o RecPow.o RecPowOlogn.o RecSum.o RevArrayRec.o dlinklist.o LinkedListAssign1.o TernarySearch.o AVLtree.o largest.o
+LINKOBJ  = BinaryFib.o binarysum.o FibWithArray.o GCDRec.o isPalindrom.o IsPrimeRec.o main.o Recfac.o RecfibMemorize.o RecMaxArray.o RecPow.o RecPowOlogn.o RecSum.o RevArrayRec.o dlinklist.o LinkedListAssign1.o TernarySearch.o AVLtree.o largest.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -L"C:/Users/uday/Desktop/C++ code/Hello World/LinkedList" -mwindows
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = Project1.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+BinaryFib.o: BinaryFib.cpp
+	$(CPP) -c BinaryFib.cpp -o BinaryFib.o $(CXXFLAGS)
+
+binarysum.o: binarysum.cpp
+	$(CPP) -c binarysum.cpp -o binarysum.o $(CXXFLAGS)
+
+FibWithArray.o: FibWithArray.cpp
+	$(CPP) -c FibWithArray.cpp -o FibWithArray.o $(CXXFLAGS)
+
+GCDRec.o: GCDRec.cpp
+	$(CPP) -c GCDRec.cpp -o GCDRec.o $(CXXFLAGS)
+
+isPalindrom.o: isPalindrom.cpp
+	$(CPP) -c isPalindrom.cpp -o isPalindrom.o $(CXXFLAGS)
+
+IsPrimeRec.o: IsPrimeRec.cpp
+	$(CPP) -c IsPrimeRec.cpp -o IsPrimeRec.o $(CXXFLAGS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+Recfac.o: Recfac.cpp
+	$(CPP) -c Recfac.cpp -o Recfac.o $(CXXFLAGS)
+
+RecfibMemorize.o: RecfibMemorize.cpp
+	$(CPP) -c RecfibMemorize.cpp -o RecfibMemorize.o $(CXXFLAGS)
+
+RecMaxArray.o: RecMaxArray.cpp
+	$(CPP) -c RecMaxArray.cpp -o RecMaxArray.o $(CXXFLAGS)
+
+RecPow.o: RecPow.cpp
+	$(CPP) -c RecPow.cpp -o RecPow.o $(CXXFLAGS)
+
+RecPowOlogn.o: RecPowOlogn.cpp
+	$(CPP) -c RecPowOlogn.cpp -o RecPowOlogn.o $(CXXFLAGS)
+
+RecSum.o: RecSum.cpp
+	$(CPP) -c RecSum.cpp -o RecSum.o $(CXXFLAGS)
+
+RevArrayRec.o: RevArrayRec.cpp
+	$(CPP) -c RevArrayRec.cpp -o RevArrayRec.o $(CXXFLAGS)
+
+dlinklist.o: dlinklist.cpp
+	$(CPP) -c dlinklist.cpp -o dlinklist.o $(CXXFLAGS)
+
+LinkedListAssign1.o: LinkedListAssign1.cpp
+	$(CPP) -c LinkedListAssign1.cpp -o LinkedListAssign1.o $(CXXFLAGS)
+
+TernarySearch.o: TernarySearch.cpp
+	$(CPP) -c TernarySearch.cpp -o TernarySearch.o $(CXXFLAGS)
+
+AVLtree.o: AVLtree.cpp
+	$(CPP) -c AVLtree.cpp -o AVLtree.o $(CXXFLAGS)
+
+largest.o: largest.cpp
+	$(CPP) -c largest.cpp -o largest.o $(CXXFLAGS)

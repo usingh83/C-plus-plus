@@ -1,0 +1,15 @@
+Search Algorithms
+
+The Assignemt has been written in C++. The Graph used has 10 vertices and 20 edges and can be seen in the file "Graph.JPG".I have defined the graph in 
+terms of an adjacency list, which is also drawn out in "Graph.JPG".The attached project is a DEV-C++ 5.11 IDE project.
+
+
+Depth First Search
+
+To implement DFS, i have used a recusive function call, along with an boolean array to keep track of visited nodes.It has been illustrated in 
+"Graph-DFS.png"
+
+Breadth First Search 
+
+To implement BFS, i have used a queue to implement this, along with an boolean array to keep track of visited nodes.It has been illustrated in 
+"Graph-BFS.png"
